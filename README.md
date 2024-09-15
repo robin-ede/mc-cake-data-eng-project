@@ -97,6 +97,7 @@ The repository contains the following key scripts:
 - **PySpark ETL Script** ([`pyspark_etl.py`](scripts/pyspark_etl.py)):
    - Converts game ticks into timestamps and processes raw data from S3.
    - Converts data to Parquet format for optimized querying and stores it in S3.
+   - This script is used as part of an AWS Glue job.
    - Replace `YOUR_BUCKET_NAME` with your values.
 
 - **Athena Queries** ([`athena_queries.sql`](scripts/athena_queries.sql)):
